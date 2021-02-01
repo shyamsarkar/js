@@ -236,14 +236,14 @@
         line-height: 18px;
     }
     #TextArea{
-        margin: auto;
-        width: 120%;
+        margin: 2 auto;
+        width: 110%;
     }
     #KeyBoardSection{
-        width: 100%;
+        width: 105%;
     }
     #AllButtons {
-        min-width: 130%;
+        min-width: 100%;
         margin: auto;
         order: 1;
     }
