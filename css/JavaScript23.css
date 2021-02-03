@@ -211,6 +211,36 @@
         margin: 2 auto;
         width: 150%;
     }
+    .mbtn{
+        display: none;
+    }
+    .keyl {
+        position: relative;
+        top: -10px;
+        left: -1px;
+        height: 45%;
+        width: min-content;
+    }
+    .keyr {
+        position: relative;
+        top: 0px;
+        right: 50%;
+        height: 45%;
+        width: min-content;
+    }
+    .hindi-font {
+        font-size: 1.2rem;
+    }
+    .common-btn{
+        width: 30px;
+    }
+    .common-btn-2{
+        width: 15px;
+    }
+    .common-btn-4{
+        width: 70px;
+        line-height: 18px;
+    }
 }
 
 
