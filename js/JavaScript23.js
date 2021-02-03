@@ -124,7 +124,7 @@ function Suggested_btn(TAT, ToChange) {
             }
             // for capital Letter
             else if (TAT == element.children[2].innerText.toUpperCase()) {
-                Change_color(element);
+                Change_color(element, ToChange);
                 if (TAT == 'A' || TAT == 'S' || TAT == 'D' || TAT == 'F' || TAT == 'G' || TAT == 'Q' || TAT == 'W' || TAT == 'E' || TAT == 'R' || TAT == 'T' || TAT == 'B' || TAT == 'V' || TAT == 'C' || TAT == 'X' || TAT == 'Z') {
                     shiftr.style.backgroundColor = ToChange;
                     shiftr.style.bordercolor = ToChange;
@@ -147,7 +147,7 @@ function Suggested_btn(TAT, ToChange) {
                 Change_color(element, ToChange);
             }
             else if(TAT == "|" && element.children[2].innerText =="\\"){
-                Change_color(element);
+                Change_color(element, ToChange);
                 Change_color(shiftl, ToChange);
             }
             else if(TAT =="'" && element.children[2].innerText =="\""){
