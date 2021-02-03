@@ -1,4 +1,3 @@
-console.log("JavaScript23");
 let randomBtn = document.getElementById("randomBtn");
 let UserInput = document.getElementById("UserInput");
 let TextArea = document.getElementById("TextArea");
@@ -11,7 +10,7 @@ let Text_number = 0;
 let SuccessColor = "#28a745";
 let DangerColor = "#dc3545";
 
-randomBtn.addEventListener('click', function () {
+randomBtn.addEventListener('click', function (){
     Text_number = 0;
     ClearUserInput();
     UserInput.focus();
@@ -66,7 +65,6 @@ randomBtn.addEventListener('click', function () {
 /*         FUNCTION AREA          */
 
 function Typing(PressedSpelling){
-    console.log(PressedSpelling.key);
     // variable for text area spelling
     let Only_one_spelling = document.getElementById(Text_number);
 
@@ -100,6 +98,9 @@ function Typing(PressedSpelling){
         Suggested_btn(PressedSpelling.key, DangerColor)
     }
     T_A_T = TextArea.innerText[Text_number]
+    if(T_A_T == undefined){
+        randomBtn.click();
+    }
     Suggested_btn(T_A_T, SuccessColor);
 
 
@@ -108,7 +109,6 @@ function Typing(PressedSpelling){
 
 
 function Suggested_btn(TAT, ToChange) {
-    console.log(TAT);
     // For keyboard Input color
     All_li.forEach(function (element) {
         if (element.children[2] != null || element.children[2] != undefined) {
